@@ -28,5 +28,5 @@ app.listen(PORT, async () => {
 app.get("/", (req, res) => {
     return res
         .status(200)
-        .send("<h1 style='color:red'> Hello, Welcome to Full stack MERN Application of Task manager Server</h1>");
+        .send("<h1 style='color:red'> Netflix Assessment MERN Stack assignment</h1>");
 });
