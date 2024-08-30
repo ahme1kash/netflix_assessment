@@ -1,0 +1,142 @@
+.nav {
+    width: 100%;
+    padding: 18px 6vw;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    font-size: 18px;
+    color: #e5e5e5;
+    z-index: 1;
+    transition: background-color 0.4s ease;
+}
+
+.nav.active {
+    background-color: #000000;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    flex-direction: row;
+}
+
+.nav-left img {
+    width: 80px;
+}
+
+.nav-left ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-left ul li {
+    cursor: pointer;
+
+}
+
+.nav-right {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.nav-right .icons {
+    width: 20px;
+    cursor: pointer
+}
+
+.nav-right .profile {
+    width: 32px;
+    height: 30px;
+    border-radius: 4px;
+}
+
+.nav-profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.nav .dropdown {
+    position: absolute;
+    top: 72%;
+    /* right:  */
+    right: 3vw;
+    width: 18vw;
+    padding: 18px;
+    z-index: 1;
+    background-color: #302f31;
+    cursor: pointer;
+    font-size: 12px;
+    /* width: 2vw; */
+    height: 15.5vw;
+    line-height: 20px;
+    display: none;
+
+}
+
+
+.nav-profile:hover .dropdown {
+    display: block;
+
+
+}
+
+/* .dropdown p:hover {
+    text-decoration: underline;
+} */
+
+
+.dropdown-icons {
+    width: 1.8em;
+    height: 1.8em;
+    border-radius: 3px;
+}
+
+
+.dd-list1,
+.dd-list2,
+.dd-list3,
+.dd-list4 {
+    display: flex;
+    gap: 2.3em;
+    font-family: "poppins";
+    line-height: 2em;
+    list-style: none;
+    font-weight: 400;
+    font-size: medium;
+    margin: 0.5em 0 0.8em 0
+}
+
+/* .dd-list1,
+.dd-list2,
+.dd-list3,
+.dd-list4 ul {
+    margin-top: -1em;
+} */
+.dropdown li:hover {
+    text-decoration: underline;
+}
+
+.dd-list5 p {
+    margin-top: 1em;
+    font-family: "poppins";
+    font-weight: 400;
+    font-size: medium;
+    margin-left: 4em;
+
+}
+
+@media(max-width:1024px) {
+    .nav-left {
+        display: none;
+    }
+
+    .nav-right {
+        position: absolute;
+        right: 0
+    }
+}
