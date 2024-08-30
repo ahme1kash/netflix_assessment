@@ -118,7 +118,6 @@ const Nav = () => {
               <p className="signout">
                 <Link
                   style={{ color: "white", textDecoration: "inherit" }}
-                  to="./login"
                   onClick={handleLogout}
                 >
                   Sign out of Netflix
