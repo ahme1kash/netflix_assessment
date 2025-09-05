@@ -1,4 +1,4 @@
-# Netflix Assessment MERN
+# Netflix UI CLONE in REACT.JS and NODE.JS
 
 This project is a netflix alike UI webapp with user Authentiction with Node.JS and UI is creted in React.JS. User Credentials are stored in MongoDB Atlas server.
 UI is similar to netflix.com with Add To Favorites functionality.
